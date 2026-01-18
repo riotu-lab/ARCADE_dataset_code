@@ -5,6 +5,18 @@ This repository contains analysis code used in the research paper
 
 ARCADE is a city-scale corpus of Arabic radio speech designed for fine-grained dialect identification. The dataset includes 6,907 annotations covering 3,790 unique audio segments from radio streams across 58 cities in 19 Arab countries.
 
+## Download dataset
+To downlaod the dataset you need to use `datasets` and `torchcodec` libraries 
+```bash
+pip install datasets torchcodec
+```
+Then you can use 
+```python
+from datasets import load_dataset
+
+ds = load_dataset("riotu-lab/ARCADE-full")
+```
+
 ## Files
 
 - **`comprehensive_analysis.py`**  
